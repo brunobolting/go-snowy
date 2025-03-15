@@ -2,6 +2,9 @@
 
 Snowy is a lightweight, type-safe HTTP client specifically designed for interacting with JSON APIs. It offers a clean, generics-based interface for making HTTP requests with automatic JSON marshalling/unmarshalling, configurable timeouts, and efficient connection pooling.
 
+<img alt="Coverage Badge" src="https://img.shields.io/badge/coverage-92.2%25-blue">
+<a href="https://pkg.go.dev/github.com/brunobolting/go-snowy"><img src="https://pkg.go.dev/badge/github.com/brunobolting/go-snowy.svg" alt="Go Reference"></a>
+
 ## Key Features
 
 - Type-safe requests with generics
@@ -48,3 +51,4 @@ if err != nil {
 user := response.Data
 fmt.Println("User Name:", user.Name)
 ```
+See [documentation](https://pkg.go.dev/github.com/brunobolting/go-snowy) for more examples and details.

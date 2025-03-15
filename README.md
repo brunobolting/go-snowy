@@ -33,7 +33,12 @@ type UserResponse struct {
 }
 
 // Make the request
-response, err := snowy.Get[UserResponse](config, "https://api.example.com/users/1", nil, snowy.RequestData{})
+response, err := snowy.Get[UserResponse](
+    config,
+    "https://api.example.com/users/1",
+    nil,
+    snowy.RequestData{}
+)
 if err != nil {
     // Handle error
     return err
